@@ -5,3 +5,10 @@ board.each do |element|
     counter += 1
   end
 end
+end
+
+def current_player(board)
+  if turn_count(board) % 2
+    "X"
+  else
+    "O"
